@@ -1,0 +1,26 @@
+Тестовое задание на позицию -
+Full stack Developer
+
+implement CRUD application for user management.
+User fields. All required
+-i d
+- username (unique)
+- first_name
+- last_name
+- email (valid email address.)
+- password (min length 8. at least one number and one letter )
+- user_type ("Admin", "Driver')
+
+Form should display validation errors.
+
+In css class naming will be good if you use BEM
+https://ru.bem.info/methodology/quick-start/#%D0%91%D0%BB%D0%BE%D0%BA
+Don`t use any css frameworks, just your own css code and markup.
+Design for this task
+https://xd.adobe.com/view/47ceae08-f089-431b-bd2f-a02a7045806f-129d/
+
+дедлайн - до конца четверга. в пятницу мы начинаем проверку.
+работы кидать в этот список
+https://docs.google.com/spreadsheets/d/1iwPGXl6rdqQUtnQTN70_GR4he3AIKBGnzwHroXQDCu8/edit?usp=sharing
+
+фронт и бек разделите по двум проектам

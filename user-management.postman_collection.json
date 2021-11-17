@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "38369635-60e5-4fe8-9b7d-cbe2ca2d6e57",
+		"name": "user-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin99\",\r\n    \"first_name\": \"Admin\",\r\n    \"last_name\": \"Adminsky\",\r\n    \"email\": \"adm@asd.com\",\r\n    \"password\": \"!1Asdfgh\",\r\n    \"user_type\": \"Driver\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_host}}/users",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_host}}/users",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET by user_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_host}}/users/6194013553cff6600ae6cc06",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"users",
+						"6194013553cff6600ae6cc06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL by user_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api_host}}/users/6194013553cff6600ae6cc06",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"users",
+						"6194013553cff6600ae6cc06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE by user_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Admin\",\r\n    \"last_name\": \"Adminsky\",\r\n    \"email\": \"admsd@asd.com\",\r\n    \"password\": \"!1Asdfgh\",\r\n    \"user_type\": \"Driver\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_host}}/users/6193f5cbe5476750a014eda9",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"users",
+						"6193f5cbe5476750a014eda9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE by user_id Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Admin8\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api_host}}/users/6193f5cbe5476750a014eda9",
+					"host": [
+						"{{api_host}}"
+					],
+					"path": [
+						"users",
+						"6193f5cbe5476750a014eda9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
